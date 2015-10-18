@@ -7,6 +7,9 @@ me). This was primarily written to make it easier to download [The Comedy
 Button](https://www.patreon.com/comedybutton) automatically each week, and serve
 it to my podcast app of choice.
 
+
+## Downloading
+
 Add your Patreon email and password separated by a comma to
 `.patreon_credentials`, then add the ID of the campaign you'd like download
 (e.g., `113261`) to the `CAMPAIGN_IDS` list in `patreon.py`.
@@ -18,6 +21,9 @@ open - look for an XHR request to "posts", which will have the ID in the url
 Then run the script with `./patreon.py`. By default, podcasts are downloaded to
 the `files/` directory, and the IDs of previously saved posts are written to
 `.saved`, these settings can be configured in the script.
+
+
+## Serving 
 
 In addition I've included a simple Flask application, which serves a directory
 of mp3's as podcasts. To do so it generates an atom XML feed based on scraped
